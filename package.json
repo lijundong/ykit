@@ -1,6 +1,6 @@
 {
-  "name": "ykit",
-  "version": "2.3.3-rc",
+  "name": "@leeonfield/ykit",
+  "version": "2.4.0",
   "description": "现代 JavaScript 应用构建工具",
   "bin": {
     "ykit": "bin/ykit"
@@ -62,7 +62,7 @@
   },
   "repository": {
     "type": "https",
-    "url": "https://github.com/YMFE/ykit.git"
+    "url": "https://github.com/lijundong/ykit.git"
   },
   "devDependencies": {
     "babel-eslint": "6",

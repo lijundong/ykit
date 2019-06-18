@@ -1,10 +1,12 @@
-## @leeonfield/ykit
+# @leeonfield/ykit
 
->分叉原因：因开发需要，需要对当前的 ykit 的一些功能进行 fix 以及功能扩展，官方反馈比较慢。
+分叉原因：因开发需要，需要对当前的 ykit 的一些功能进行 fix 以及功能扩展，官方反馈比较慢。
 
-### ChangeLog
+安装：`npm i @leeonfield/ykit`
+
+## ChangeLog
+
 - add: 增加 devHost，在 ykit 配置文件中 server 配置增加 devHost 配置，用于开发机环境开发自定义 host（当前 ykit 中的静态资源 host 配置写死了 127.0.0.1，不适用于开发机开发）
-
 
 
 
