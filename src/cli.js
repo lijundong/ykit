@@ -9,7 +9,7 @@ const UtilFs = require('./utils/fs.js');
 
 let Manager = require('./modules/GlobalManager.js');
 
-let helpTitle = `\n===================== YKit ${version} ====================\n`;
+let helpTitle = `\n===================== @leeonfield/ykit ${version} ====================\n`;
 
 let initOptions = (cmd) => {
     if (cmd.setOptions) {

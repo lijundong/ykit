@@ -24,7 +24,7 @@ exports.setOptions = optimist => {
 };
 
 exports.run = function(options) {
-    log(`ykit@${require('../../package.json').version}`);
+    log(`@leeonfield/ykit@${require('../../package.json').version}`);
 
     const min = options.m || options.min || false,
         clean = options.c || options.clean || true,

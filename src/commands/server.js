@@ -38,7 +38,7 @@ exports.setOptions = (optimist) => {
 };
 
 exports.run = (options) => {
-    log(`ykit@${require('../../package.json').version}`);
+    log(`@leeonfield/ykit@${require('../../package.json').version}`);
 
     let app = connect(),
         cwd = options.cwd,
@@ -189,7 +189,7 @@ exports.run = (options) => {
             projectList.forEach(project => {
                 if(project.alias && project.alias.length) {
                     project.alias.forEach( alias => {
-                        var aliasReg = new RegExp(`\^/${alias}$|\^/${alias}/`);
+                        var aliasReg = new RegExp(`^/${alias}$|^/${alias}/`);
                         if(aliasReg.test(req.url)) {
                             req.url = req.url.replace(aliasReg, `/${project.baseName}/`);
                             // log(`alias rewrite: ${oldUrl} -> ${req.url}` );
