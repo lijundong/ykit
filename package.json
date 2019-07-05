@@ -14,7 +14,8 @@
     "test": "mocha --recursive --timeout 0",
     "testlocal": "env ENV=local mocha --recursive --timeout 0",
     "start": "cd .. && sudo node ykit/bin/ykit server",
-    "doc": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && ydoc build && node static/tasks/post-process-doc.js"
+    "doc": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && ydoc build && node static/tasks/post-process-doc.js",
+    "build": "gulp default"
   },
   "license": "MIT",
   "dependencies": {
@@ -73,9 +74,10 @@
     "chai": "^3.5.0",
     "conventional-changelog-cli": "^1.2.0",
     "debug": "^2.6.0",
+    "del": "^5.0.0",
     "eslint": "^4.4.1",
     "findup": "^0.1.5",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-babel": "^6.1.2",
     "gulp-watch": "^4.3.8",
     "husky": "^0.14.3",
